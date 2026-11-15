@@ -57,7 +57,7 @@
 
   <!-- Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
@@ -128,7 +128,7 @@
         <span class="tracking-tight">Ayan<span class="text-indigo-600 dark:text-indigo-400">.banerjee()</span></span>
       </a>
 
-      <!-- Desktop Nav with hover pills -->
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-600 dark:text-slate-300">
         <a href="#about" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">About</a>
         <a href="#skills" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">Skills</a>
@@ -190,7 +190,7 @@
         <!-- Social Icons -->
         <div class="flex items-center justify-center md:justify-start gap-5 pt-3 text-slate-500 dark:text-slate-400">
           <a href="https://linkedin.com" target="_blank" class="hover:text-indigo-500 hover:scale-110 text-xl transition"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com" target="_blank" class="hover:text-indigo-500 hover:scale-110 text-xl transition"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/ayanbanerjee-png" target="_blank" class="hover:text-indigo-500 hover:scale-110 text-xl transition"><i class="fa-brands fa-github"></i></a>
           <a href="mailto:ayanbanerjee6789@gmail.com" class="hover:text-indigo-500 hover:scale-110 text-xl transition"><i class="fa-solid fa-envelope"></i></a>
           <span class="text-xs mono text-slate-400 border-l border-slate-300 dark:border-slate-800 pl-4">
             <i class="fa-solid fa-location-dot mr-1"></i> Ranchi, India
@@ -202,10 +202,12 @@
       <div class="relative animate-float">
         <div class="w-60 h-60 sm:w-72 sm:h-72 rounded-3xl p-2 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl shadow-indigo-500/20">
           <div class="w-full h-full rounded-2xl bg-surface-dark overflow-hidden flex items-center justify-center relative group">
+            <!-- Uses your local profile.jpg uploaded to GitHub -->
             <img 
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=700" 
+              src="./profile.jpeg" 
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=700';" 
               alt="Ayan Banerjee" 
-              class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-110 group-hover:grayscale-0 transition-all duration-700"
+              class="w-full h-full object-cover contrast-125 group-hover:scale-110 transition-all duration-700"
             />
             <div class="absolute bottom-3 left-3 right-3 px-3.5 py-2 rounded-xl bg-black/60 backdrop-blur-md text-white text-xs mono flex justify-between items-center border border-white/10">
               <span class="font-semibold">BIT Mesra '26</span>
@@ -216,10 +218,9 @@
       </div>
     </section>
 
-    <!-- INFINITE TECH STACK TICKER / MARQUEE -->
+    <!-- INFINITE TECH STACK TICKER -->
     <div class="relative w-full overflow-hidden py-4 border-y border-slate-200/80 dark:border-slate-800/80">
       <div class="flex w-[200%] animate-marquee items-center gap-10 whitespace-nowrap text-sm font-semibold tracking-wider text-slate-500 dark:text-slate-400 mono uppercase">
-        <!-- Repeat items twice for seamless loop -->
         <span><i class="fa-brands fa-python text-indigo-500 mr-2"></i>Python</span>
         <span><i class="fa-solid fa-microchip text-indigo-500 mr-2"></i>PyTorch</span>
         <span><i class="fa-brands fa-microsoft text-indigo-500 mr-2"></i>Microsoft Azure</span>
@@ -229,7 +230,7 @@
         <span><i class="fa-solid fa-database text-indigo-500 mr-2"></i>FAISS & RAG</span>
         <span><i class="fa-solid fa-robot text-indigo-500 mr-2"></i>Ollama</span>
         <span><i class="fa-solid fa-network-wired text-indigo-500 mr-2"></i>Attention GRU</span>
-        <!-- Duplicated items -->
+        <!-- Duplicate for loop -->
         <span><i class="fa-brands fa-python text-indigo-500 mr-2"></i>Python</span>
         <span><i class="fa-solid fa-microchip text-indigo-500 mr-2"></i>PyTorch</span>
         <span><i class="fa-brands fa-microsoft text-indigo-500 mr-2"></i>Microsoft Azure</span>
@@ -268,7 +269,105 @@
       </div>
     </section>
 
-    <!-- RESEARCH SHOWCASE WITH INTERACTIVE CARD -->
+    <!-- NEW SECTION: SKILLS WITH OFFICIAL DEV LOGOS -->
+    <section id="skills" class="space-y-8 reveal">
+      <div class="space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <i class="fa-solid fa-layer-group text-indigo-500"></i> Technical Competencies
+        </h2>
+        <p class="text-slate-500 dark:text-slate-400 text-sm">Real-world technologies implemented across my AI architectures and cloud infrastructure.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
+        
+        <!-- Python -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="Python" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Python</span>
+          <span class="text-[10px] mono text-slate-400">Core Language</span>
+        </div>
+
+        <!-- PyTorch -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="PyTorch" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">PyTorch</span>
+          <span class="text-[10px] mono text-slate-400">Deep Learning</span>
+        </div>
+
+        <!-- Microsoft Azure -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="Azure" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">MS Azure</span>
+          <span class="text-[10px] mono text-slate-400">Cloud Infra</span>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="FastAPI" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">FastAPI</span>
+          <span class="text-[10px] mono text-slate-400">Inference APIs</span>
+        </div>
+
+        <!-- TensorFlow -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="TensorFlow" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">TensorFlow</span>
+          <span class="text-[10px] mono text-slate-400">Neural Nets</span>
+        </div>
+
+        <!-- OpenCV -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="OpenCV" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">OpenCV</span>
+          <span class="text-[10px] mono text-slate-400">Computer Vision</span>
+        </div>
+
+        <!-- YOLOv8 & DINOv2 -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <i class="fa-solid fa-eye text-2xl text-indigo-500 group-hover:scale-110 transition-transform"></i>
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">YOLOv8 & DINO</span>
+          <span class="text-[10px] mono text-slate-400">Object Detect</span>
+        </div>
+
+        <!-- FAISS & Vector DB -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <i class="fa-solid fa-database text-2xl text-purple-500 group-hover:scale-110 transition-transform"></i>
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">FAISS & RAG</span>
+          <span class="text-[10px] mono text-slate-400">Embeddings</span>
+        </div>
+
+        <!-- Next.js / React -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform dark:invert" alt="Next.js" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Next.js</span>
+          <span class="text-[10px] mono text-slate-400">Frontend UI</span>
+        </div>
+
+        <!-- MySQL / SQLite -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="MySQL" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">MySQL & SQLite</span>
+          <span class="text-[10px] mono text-slate-400">Databases</span>
+        </div>
+
+        <!-- Git / GitHub -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="Git" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Git & GitHub</span>
+          <span class="text-[10px] mono text-slate-400">Version Control</span>
+        </div>
+
+        <!-- Figma -->
+        <div class="spotlight-card p-4 rounded-xl bg-white/70 dark:bg-surface-cardDark/70 border border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center gap-2 text-center group hover:border-indigo-500 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-8 h-8 group-hover:scale-110 transition-transform" alt="Figma" />
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Figma</span>
+          <span class="text-[10px] mono text-slate-400">Google UX Cert</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH HIGHLIGHT -->
     <section id="research" class="reveal">
       <div class="spotlight-card p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-indigo-950/70 via-surface-cardDark to-surface-cardDark border border-indigo-800/40 shadow-2xl relative overflow-hidden group">
         <div class="absolute -right-16 -top-16 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform duration-700"></div>
@@ -297,7 +396,7 @@
       </div>
     </section>
 
-    <!-- INTERACTIVE TERMINAL WIDGET (Like rishibose.fun tech showcase) -->
+    <!-- INTERACTIVE TERMINAL WIDGET -->
     <section class="reveal">
       <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-cardDark shadow-xl overflow-hidden">
         <!-- Terminal Header -->
@@ -528,10 +627,10 @@
   <!-- FOOTER -->
   <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500">
     <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>© <span id="year"></span> Ayan Banerjee. Built with vanilla JS & Tailwind CSS.</p>
+      <p>© <span id="year"></span> Ayan Banerjee. Built with clean code & Tailwind CSS.</p>
       <div class="flex items-center gap-5">
         <a href="https://linkedin.com" target="_blank" class="hover:text-indigo-500 transition">LinkedIn</a>
-        <a href="https://github.com" target="_blank" class="hover:text-indigo-500 transition">GitHub</a>
+        <a href="https://github.com/ayanbanerjee-png" target="_blank" class="hover:text-indigo-500 transition">GitHub</a>
         <a href="mailto:ayanbanerjee6789@gmail.com" class="hover:text-indigo-500 transition">Email</a>
       </div>
     </div>
@@ -608,7 +707,6 @@
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
 
-          // Trigger Counter Animation once
           if (!counted && entry.target.querySelector('[data-counter]')) {
             counters.forEach(counter => {
               const target = parseFloat(counter.getAttribute('data-counter'));
